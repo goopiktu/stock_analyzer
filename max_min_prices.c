@@ -16,8 +16,7 @@ int find_min(double OHLC[][4], int ROWS) {
 }
 
 // To get maximum
-int find_max(double OHLC[][4], int ROWS)
-{
+int find_max(double OHLC[][4], int ROWS) {
 	int x;
 	int max_index = 0;
 	for(x = 0; x < ROWS; x++) {
