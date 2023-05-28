@@ -2,6 +2,7 @@
 #include <string.h>
 
 #include "test_price.h"  
+#include "numeric_date.c"
 
 typedef char StrDate[11]; 
 
