@@ -2,48 +2,26 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include "LIOBING-C6.h"
+#include "company_struct.h"
 #include "numeric_date.c"  
 
-
-
-
-int
-GetYear(StrDate date)
-{
-	return atol(date+6);	// date + 6 is the start of the portion of the string that stores the "YYYY".
+int GetYear(StrDate date) {
+	return atol(date+6);
 }
 
-
-
-int 
-GetMonth(StrDate date)
-{
+int GetMonth(StrDate date) {
 	char temp[3] = "";
-	
-	temp[0] = date[0];  // extract the 1st digit of the month
-	temp[1] = date[1];	// extract the 2nd digit of the month
+	temp[0] = date[0];  
+	temp[1] = date[1];	
 	return atol(temp);
 }
 
-
-
-int 
-GetDay(StrDate date)
-{
+int GetDay(StrDate date) {
 	char temp[3] = "";
-	
-	temp[0] = date[3];	// extract the 1st digit of the day
-	temp[1] = date[4];	// extract the 2nd digit of the day
+	temp[0] = date[3];	
+	temp[1] = date[4];	
 	return atol(temp);
 }
-
-
-
-
-
-
-
 
 /* (r = rows)(d = date)(o = OHLC)(v = volume)*/
 void get_input(C_data *c)

@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include "company_struct.c"
+#include "company_struct.h"
 #include "numeric_date.c"  
 
 int GetYear(StrDate date) {
