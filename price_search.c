@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "test_price.c"  
+#include "test_price.h"  
 
 typedef char StrDate[11]; 
 
